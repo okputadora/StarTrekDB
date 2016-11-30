@@ -46,7 +46,8 @@
           <div id="psTag">Primitive Species</div>
           <div id="fcTag">First Contact</div>
           <div id="earthTag">On Earth</div>
-          <div id="earthTag">On Earth</div>
+          <div id="humanityTag">Humanity</div>
+          <div id="otTag">On Trial</div>
           <div id="searchTags">Search</div>
         </div>
         <div id="tagResults">
@@ -75,7 +76,7 @@
         </div>
       </div>
     </div>
-    <div class="main-cont"id="series">
+    <div class="main-cont"id="best of">
       <h2>Best Of</h2>
     </div>
 
