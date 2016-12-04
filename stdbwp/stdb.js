@@ -1,9 +1,7 @@
 var tagsToQ = []
 $(document).ready(function(){
   $(".tagList > div").click(function(){
-    console.log("Hello");
     id = this.id;
-    console.log(id);
     $("#" + id).toggleClass("select");
     var tagDuplicate = false;
     for (var i in tagsToQ){
@@ -14,15 +12,22 @@ $(document).ready(function(){
     }
     if (tagDuplicate === false){
       tagsToQ.push(id);
-      console.log(tagsToQ);
     }
   })
-  //
-  // $("#searchTags").click(function(){
-  //   $.ajax({
-  //     type: "POST",
-  //     url: "tag_search.php",
-  //     data: data,
-  //
-  //   })
+
+
+  $("#searchTags").click(function(){
+    var searchQ = tagsToQ.toString();
+    var data = "search=" + searchQ;
+    console.log(data);
+    $.ajax({
+      type: "POST",
+      url: "tag_search.php",
+      data: data,
+      success: function(html){
+        console.log("Success");
+        console.log(html);
+      }
+    })
+  });
 })
