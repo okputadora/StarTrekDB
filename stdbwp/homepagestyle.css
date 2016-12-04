@@ -1,5 +1,5 @@
 *{
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -91,22 +91,32 @@ body{
 .main-cont{
   margin: 20px 40px 0 40px;
   color: white;
-  height: 55%;
 }
 
 .main-cont > h2{
   font-family: 'Bungee';
 }
 
-#taglist{
+.sub-cont{
+  height: 55%;
+}
+
+#tagsAndSearch{
   display: flex;
   flex-direction: column;
-  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.taglist{
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 465px;
   flex-wrap: wrap;
   /*border: 1px solid red;*/
 }
 
-#taglist > div{
+.taglist > div{
   padding: 10px;
   margin: 5px;
   text-align: center;
@@ -119,15 +129,24 @@ body{
 #searchTags{
   background-color: white;
   color: black;
-  opacity: .5;
+  opacity: .7;
   transition: .7s;
+  width: 200px;
+  align-self: center;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid white;
+  font-family: 'Roboto';
+  transition: .7s;
+  text-align: center;
 }
 
 #searchTags:hover{
   opacity: 1;
+  cursor: pointer;
 }
 
-#taglist > div:hover{
+.tagList > div:hover, .tagList > div.select{
   background-color: white;
   color: #131313;
 }
@@ -138,14 +157,15 @@ body{
 }
 
 #series{
-  height: 50%;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  height: 60%;
+
 
 }
 #seriesList{
   display: flex;
   width: 1850px;
+  overflow-x: scroll;
+  overflow-y: hidden;
   justify-content: flex-start;
 }
 

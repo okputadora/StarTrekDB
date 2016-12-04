@@ -7,10 +7,16 @@
      <!--import google font-->
      <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet">
      <!--import style sheet-->
-     <link rel="stylesheet" type = "text/css"
-     href=homepagestyle.css>
+     <link rel="stylesheet" type = "text/css" href=homepagestyle.css>
+     <!-- For carousel -->
+     <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
      <!--link javascript-->
   </head>
+  <script src="jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src= "stdb.js"></script>
+
 
   <body>
     <div id ="navbar-fixed">
@@ -33,25 +39,35 @@
         <img src = "imgs/enterprise_d.jpg" width = "100%" />
       </div>
     </div>
+
     <div class="main-cont"id="tags">
       <h2>Tags</h2>
       <div class="sub-cont" id="tag-cont">
-        <div id="tagList">
-          <div id="timeTag">Time</div>
-          <div id="bTimeTag">Back In Time</div>
-          <div id="pdTag">What Prime Directive?</div>
-          <div id="holoTag">Holodeck</div>
-          <div id="mutinyTag">Mutiny</div>
-          <div id="mindRapeTag">Mind Rape</div>
-          <div id="psTag">Primitive Species</div>
-          <div id="fcTag">First Contact</div>
-          <div id="earthTag">On Earth</div>
-          <div id="humanityTag">Humanity</div>
-          <div id="otTag">On Trial</div>
-          <div id="searchTags">Search</div>
+        <div id="tagsAndSearch">
+          <div class="tagList">
+            <div id="tempflux">Temporal Flux</div>
+            <div id="bTime">Time Travel</div>
+            <div id="pd">What Prime Directive?</div>
+            <div id="holo">Holodeck</div>
+            <div id="mutiny">Mutiny</div>
+            <div id="mr">Mind Rape</div>
+            <div id="ps">Primitive Species</div>
+            <div id="fc">First Contact</div>
+            <div id="earth">On Earth</div>
+            <div id="humanity">Humanity</div>
+            <div id="ot">On Trial</div>
+            <div id="borg">The Borg</div>
+            <div id="death">Death</div>
+            <div id="spirits">Spirits!</div>
+            <div id="cm">Fake Life</div>
+            <div id="mystery">Mystery</div>
+          </div>
+          <div id="searchCont">
+            <div id="searchTags">Search</div>
+          </div>
         </div>
         <div id="tagResults">
-
+          <h3>Results</h3>
         </div>
       </div>
     </div>
